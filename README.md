@@ -17,9 +17,13 @@ The app fetches the latest post from the r/todayilearned subreddit, which can ea
 
 -   **[How to Build an Automated Twitter Bot with Node.JS](https://youtu.be/Z2TXrO3Eipw)** - I saw this video when I learned how to create a Twitter bot with Node.js and discovered the trick with the Reddit URL, which I wanted to do something with.
 
+## Dependencies
+
+-   **[Tailwind CSS](https://tailwindcss.com/)** - Utility-first CSS framework
+
 ## Changelog
 
 ### 2020-12-02
 
--   setup project, initialize git repository
+-   set up project, initialize git repository
 -   show activity indicator while loading TIL
