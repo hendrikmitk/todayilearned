@@ -8,8 +8,8 @@ The app fetches the latest post from the r/todayilearned subreddit, which can ea
 
 ### ToDo
 
--   [x] show activity indicator while loading latest TIL
--   [ ] save latest TIL to localStorage after fetching
+-   [x] show activity indicator while loading TIL
+-   [x] save current TIL to localStorage after fetching
 -   [ ] only update when current TIL not in localStorage
 -   [ ] add functionality to show second to last TILs
 
@@ -27,3 +27,7 @@ The app fetches the latest post from the r/todayilearned subreddit, which can ea
 
 -   set up project, initialize git repository
 -   show activity indicator while loading TIL
+
+### 2020-12-03
+
+-   save current TIL to localStorage after fetching
