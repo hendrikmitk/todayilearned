@@ -10,7 +10,7 @@ const spinnerWrapper = document.querySelector("#spinner-wrapper");
 /////////////
 
 const insertTilHtml = (elem, til) => {
-	elem.innerHTML = `<div class="h-full flex flex-col justify-center items-start px-14"><header class="font-bold text-4xl pb-4">r/todayilearned</header><p class="text-xl pt-4">${til}</p></div>`;
+	elem.innerHTML = `<div class="h-full flex flex-col justify-center items-start px-14"><header class="font-bold text-xl md:text-2xl lg:text-3xl pb-4">r/todayilearned</header><p class="sm:text-lg pt-4">${til}</p></div>`;
 };
 
 /////////////
