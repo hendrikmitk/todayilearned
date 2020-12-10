@@ -2,7 +2,7 @@
   "name": "todayilearned",
   "version": "1.0.0",
   "description": "Web app that displays the latest post from r/todayilearned subreddit 👽",
-  "main": "src/index.js",
+  "main": "src/app.js",
   "scripts": {
     "dev": "parcel src/index.html",
     "prod": "parcel build src/index.html"
