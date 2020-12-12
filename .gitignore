@@ -1,0 +1,15 @@
+# sass utilities
+.sass-cache/
+*.sass.map
+*.scss.map
+
+# node_modules and package-lock
+node_modules
+package-lock.json
+
+# no .prettierignore and .cache
+.prettierignore
+.cache
+
+# macOS resources
+.DS_Store
