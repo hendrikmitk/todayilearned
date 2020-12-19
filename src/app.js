@@ -2,6 +2,8 @@
 // D A T A //
 /////////////
 
+const baseUrl = "https://www.reddit.com/";
+const subreddit = "r/todayilearned/new.json";
 const containerWrapper = document.querySelector("#container-wrapper");
 const spinnerWrapper = document.querySelector("#spinner-wrapper");
 
@@ -9,7 +11,7 @@ const spinnerWrapper = document.querySelector("#spinner-wrapper");
 // H E L P //
 /////////////
 
-const insertTilHtml = (elem, til) => {
+const insertHtml = (elem, til) => {
 	elem.innerHTML = `<div class="h-full flex flex-col justify-center items-start px-8 md:px-14"><header class="font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl pb-2 md:pb-4">r/todayilearned</header><p class="text-sm sm:text-base md:text-lg pt-2 md:pt-4">${til}</p></div>`;
 };
 
@@ -17,22 +19,22 @@ const insertTilHtml = (elem, til) => {
 // M A I N //
 /////////////
 
-function displayRedditTil() {
-	fetch("https://www.reddit.com/r/todayilearned/new.json")
-		.then((response) => response.json())
-		.then((data) => {
+const displayContent = url => {
+	fetch(url)
+		.then(response => response.json())
+		.then(data => {
 			const currentTil = data.data.children[0].data.title;
 			spinnerWrapper.remove();
-			insertTilHtml(containerWrapper, currentTil);
+			insertHtml(containerWrapper, currentTil);
 			localStorage.setItem("localTil", currentTil);
 		})
-		.catch((err) => {
+		.catch(err => {
 			console.error(err);
 		});
-}
+};
 
 /////////////
 // H E A R //
 /////////////
 
-window.addEventListener("load", displayRedditTil);
+window.addEventListener("load", displayContent(baseUrl + subreddit));
