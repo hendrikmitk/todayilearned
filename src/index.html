@@ -12,13 +12,28 @@
 <body>
 
     <div class="h-screen bg-red-700 flex justify-center items-center">
-        <div id="container-wrapper" class="bg-gray-50 font-mono h-1/2 lg:h-2/5 w-10/12 sm:w-9/12 md:w-8/12 lg:w-7/12 xl:w-6/12 rounded-xl md:rounded-1xl lg:rounded-2xl xl:rounded-3xl flex flex-col justify-evenly items-center">
 
-            <div id="spinner-wrapper">
-                <div class="spinner"></div>
+        <div id="container" class="bg-gray-50 font-mono h-1/2 lg:h-2/5 w-10/12 sm:w-9/12 md:w-8/12 lg:w-7/12 xl:w-6/12 rounded-xl md:rounded-1xl lg:rounded-2xl xl:rounded-3xl flex flex-row justify-between items-center">
+
+            <div id="left-arrow" class="text-3xl md:text-5xl w-6/12 sm:w-5/12 md:w-4/12 lg:w-3/12 flex justify-center"></div>
+
+            <div id="container-wrapper" class="flex-col justify-evenly items-center">
+
+                <div id="spinner-wrapper">
+                    <div class="spinner"></div>
+                </div>
+
+                <!-- <div class="h-full flex flex-col justify-center items-start px-2 md:px-4">
+                    <header class="font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl pb-2 md:pb-4">r/todayilearned</header>
+                    <p class="text-sm sm:text-base md:text-lg pt-2 md:pt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum facere inventore doloremque similique sunt incidunt cupiditate! Corrupti eum veniam ab! Officiis deserunt perferendis itaque rem id reiciendis voluptate.</p>
+                </div> -->
+
             </div>
 
+            <div id="right-arrow" class="text-3xl md:text-5xl w-6/12 sm:w-5/12 md:w-4/12 lg:w-3/12 flex justify-center"></div>
+
         </div>
+
     </div>
 
     <script type="text/javascript" src="./app.js"></script>

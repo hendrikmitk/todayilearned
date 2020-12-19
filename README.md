@@ -10,8 +10,6 @@ The app fetches the latest post from the r/todayilearned subreddit, which can ea
 
 -   [x] show activity indicator while loading TIL
 -   [x] add Tailwind utility classes for responsiveness
--   [x] save current TIL to localStorage after fetching
--   [ ] only update when current TIL not in localStorage
 -   [ ] add functionality to show second to last TILs
 
 ## Inspirations
@@ -31,7 +29,7 @@ The app fetches the latest post from the r/todayilearned subreddit, which can ea
 
 ### 2020-12-03
 
--   save current TIL to localStorage after fetching
+-   ~~save current TIL to localStorage after fetching~~
 
 ### 2020-12-05
 

@@ -2,31 +2,35 @@
 // D A T A //
 /////////////
 
+let index = 0;
 const baseUrl = "https://www.reddit.com/";
 const subreddit = "r/todayilearned/new.json";
 const containerWrapper = document.querySelector("#container-wrapper");
 const spinnerWrapper = document.querySelector("#spinner-wrapper");
+const leftArrow = document.getElementById("left-arrow");
+const rightArrow = document.getElementById("right-arrow");
 
 /////////////
 // H E L P //
 /////////////
 
-const insertHtml = (elem, til) => {
-	elem.innerHTML = `<div class="h-full flex flex-col justify-center items-start px-8 md:px-14"><header class="font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl pb-2 md:pb-4">r/todayilearned</header><p class="text-sm sm:text-base md:text-lg pt-2 md:pt-4">${til}</p></div>`;
+const insertHtml = (elem, text) => {
+	elem.innerHTML = `<div class="h-full flex flex-col justify-center items-start px-2 md:px-4"><header class="font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl pb-2 md:pb-4">r/todayilearned</header><p class="text-sm sm:text-base md:text-lg pt-2 md:pt-4">${text}</p></div>`;
 };
 
 /////////////
 // M A I N //
 /////////////
 
-const displayContent = url => {
+const displayContent = (url, i) => {
 	fetch(url)
 		.then(response => response.json())
 		.then(data => {
-			const currentTil = data.data.children[0].data.title;
+			const tilTitle = data.data.children[i].data.title;
 			spinnerWrapper.remove();
-			insertHtml(containerWrapper, currentTil);
-			localStorage.setItem("localTil", currentTil);
+			leftArrow.innerHTML = "&lsaquo;";
+			rightArrow.innerHTML = "&rsaquo;";
+			insertHtml(containerWrapper, tilTitle);
 		})
 		.catch(err => {
 			console.error(err);
@@ -37,4 +41,4 @@ const displayContent = url => {
 // H E A R //
 /////////////
 
-window.addEventListener("load", displayContent(baseUrl + subreddit));
+window.addEventListener("load", displayContent(baseUrl + subreddit, index));
