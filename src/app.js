@@ -19,7 +19,7 @@ const rightArrow = document.getElementById("right-arrow");
 /////////////
 
 const insertHtml = (elem, text) => {
-	elem.innerHTML = `<div class="flex flex-col justify-center items-start"><header class="font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl mb-6">r/todayilearned</header><p id="text-wrapper" class="text-sm sm:text-base md:text-lg">${text}</p></div>`;
+	elem.innerHTML = `<div class="flex flex-col justify-center items-start"><header class="font-bold text-base sm:text-xl md:text-2xl lg:text-3xl mb-2 md:mb-6">r/todayilearned</header><p id="text-wrapper" class="text-sm sm:text-base md:text-lg">${text}</p></div>`;
 };
 
 const toggleArrows = i => {
