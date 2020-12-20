@@ -1,16 +1,16 @@
 # todayilearned
 
-A simple web app that displays the latest post from the [r/todayilearned](https://www.reddit.com/r/todayilearned/new/) subreddit.
+A simple web app that displays posts from the [r/todayilearned](https://www.reddit.com/r/todayilearned/new/) subreddit.
 
 ## Description
 
-The app fetches the latest post from the r/todayilearned subreddit, which can easily be retrieved directly from Reddit website just by adding `.json` to the URL.
+The app fetches the latest posts from the r/todayilearned subreddit, which can easily be retrieved directly from Reddit website just by adding `.json` to the URL.
 
 ### ToDo
 
 -   [x] show activity indicator while loading TIL
 -   [x] add Tailwind utility classes for responsiveness
--   [ ] add functionality to show second to last TILs
+-   [x] add functionality to show older TILs
 
 ## Inspirations
 
@@ -34,3 +34,7 @@ The app fetches the latest post from the r/todayilearned subreddit, which can ea
 ### 2020-12-05
 
 -   add Tailwind utility classes for responsiveness
+
+### 2020-12-20
+
+-   add functionality to show older TILs
