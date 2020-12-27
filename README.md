@@ -19,22 +19,3 @@ The app fetches the latest posts from the r/todayilearned subreddit, which can e
 ## Dependencies
 
 -   **[Tailwind CSS](https://tailwindcss.com/)** - Utility-first CSS framework
-
-## Changelog
-
-### 2020-12-02
-
--   set up project, initialize git repository
--   show activity indicator while loading TIL
-
-### 2020-12-03
-
--   ~~save current TIL to localStorage after fetching~~
-
-### 2020-12-05
-
--   add Tailwind utility classes for responsiveness
-
-### 2020-12-20
-
--   add functionality to show older TILs
